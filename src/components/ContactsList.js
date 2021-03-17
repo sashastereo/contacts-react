@@ -36,7 +36,7 @@ export default function ContactsList() {
           <ModalComponent show={modalShow} onHide={() => setModalShow(false)}/>
 
           <Container className="container">
-            <Cards/>
+            <Cards array={Object.entries(localStorage)}/>
 
           </Container>
 

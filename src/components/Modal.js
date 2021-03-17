@@ -19,7 +19,7 @@ export default class ModalComponent extends Component {
     this.handleSubmit = this
       .handleSubmit
       .bind(this);
-  
+
   }
 
   handleUserInput_contactName(e) {
@@ -32,9 +32,10 @@ export default class ModalComponent extends Component {
 
   handleSubmit() {
     localStorage.setItem(this.state.contactName, this.state.contactPhone);
-    this.setState({contactName: '',
-                  contactPhone: ''});
-    document.location.reload();
+    this.setState({contactName: '', contactPhone: ''});
+    document
+      .location
+      .reload();
     // localStorage.setItem(a + '_contactPhone', this.state.contactPhone);
     // localStorage.clear();
   }
@@ -73,7 +74,9 @@ export default class ModalComponent extends Component {
                     size="md"
                     variant="success"
                     label="Save"
-                    type="submit"/>
+                    type="submit"
+                    data-dismiss="modal"
+                    id="newcontact"/>
 
                 </form>
               </div>

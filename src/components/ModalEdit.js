@@ -9,8 +9,8 @@ export default class ModalEdit extends Component {
     super(props);
     this.state = {
       newContactName: '',
-      newContactPhone: '',
-        };
+      newContactPhone: ''
+    };
     this.handleUserInput_contactName = this
       .handleUserInput_contactName
       .bind(this);
@@ -23,15 +23,8 @@ export default class ModalEdit extends Component {
     this.handleDelete = this
       .handleDelete
       .bind(this);
-    
 
   }
-
-
-  handleCreation() {
-    let arr = Object.entries(localStorage).sort();
-  }
-
 
   handleUserInput_contactName(e) {
     this.setState({newContactName: e.target.value});
@@ -44,13 +37,17 @@ export default class ModalEdit extends Component {
   handleSubmit() {
     localStorage.removeItem(this.props.contactname, this.props.contactphone);
     localStorage.setItem(this.state.newContactName, this.state.newContactPhone);
-    document.location.reload();
-    //localStorage.clear();
+    document
+      .location
+      .reload();
+
   }
 
   handleDelete() {
     localStorage.removeItem(this.props.contactname, this.props.contactphone);
-    document.location.reload();
+    document
+      .location
+      .reload();
   }
 
   render() {
@@ -70,15 +67,17 @@ export default class ModalEdit extends Component {
             <Modal.Body>
               <div>
                 <form>
-                 <Input id={this.props.contactname}
-                        onChange={this.handleUserInput_contactName}
-                        value={this.state.newContactName}
-                        placeholder={this.props.contactname}/>
+                  <Input
+                    id={this.props.contactname}
+                    onChange={this.handleUserInput_contactName}
+                    value={this.state.newContactName}
+                    placeholder={this.props.contactname}/>
                   <br/>
-                  <Input id={this.props.contactphone}
-                        onChange={this.handleUserInput_contactPhone}
-                        value={this.state.newContactPhone}
-                        placeholder={this.props.contactphone}/>
+                  <Input
+                    id={this.props.contactphone}
+                    onChange={this.handleUserInput_contactPhone}
+                    value={this.state.newContactPhone}
+                    placeholder={this.props.contactphone}/>
                   <br/><br/>
                   <ButtonComponent
                     onClick={this.handleSubmit}

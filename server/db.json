@@ -1,0 +1,14 @@
+{
+    "customers": [
+        {
+            "id": 1,
+            "name": "Customer_1",
+            "phone": "00000000000"
+        },
+        {
+            "id": 2,
+            "name": "Customer_2",
+            "phone": "123456789"
+        }
+    ]
+}

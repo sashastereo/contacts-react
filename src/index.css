@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Nunito Sans', 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+
+/* = COMMON ===  */
+h1,
+h2,
+p,
+btn,
+modal {
+  font-family: 'Nunito Sans' !important;
+  font-weight: 700 !important;
+}
+
+p {
+  margin: 0;
+}
+
+.section-outer {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.section-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 20px;
+}
+
+/* = SIGN IN ===  */
+.signin-input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.signin {
+  margin-top: 100px;
+}
+
+.signin-button-container {
+  margin: 20px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-success {
+  width: 180px !important;
+  height: 48px !important;
+
+}
+
+/* = / SIGN IN ===  */
+
+/* =  CONTACTS LIST ===  */
+
+.contacts-list-main {
+  margin-top: 10px;
+
+}
+
+.contacts-list-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  max-height: 100px;
+  flex-flow: row nowrap;
+  margin: 100px auto 50px auto;
+}
+
+.contacts-list-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.card {
+  min-width: 200px;
+  margin: 10px 10px;
+}
+
+.container {
+  display: flex;
+  justify-content: left;
+  flex-flow: row;
+  flex-wrap: wrap;
+}
+
+.card-image {
+  border-radius: 100% !important;
+
+}
+
+.btn-outline-dark {
+  position: relative;
+  left: 185px;
+  border: none;
+  border-color: white !important;
+  width: 30px;
+  height: 30px;
+  display: flex !important;
+  justify-content: center !important;
+}
+
+.btn-danger {
+  width: 180px !important;
+  height: 48px !important;
+}
+
+.modal-body {
+  display: flex !important;
+  justify-content: center !important;
+}
+
+.modal-content {
+  width: 300px !important;
+
+}
+
+.modal-body input {
+  margin: 5px 0px !important;
+}
+
+
+/* = / CONTACTS LIST ===  */
+
+/*  === BREAKPOINTS ===  */
+
+@media (max-width: 1200px) {
+  .section-inner {
+    max-width: 992px;
+  }
+}
+
+@media (max-width: 992px) {
+  .section-inner {
+    max-width: 768px;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-inner {
+    max-width: 576px;
+  }
+}
+
+@media (max-width: 576px) {
+  .section-inner {
+    max-width: none;
+  }
+}
+
+/*  === / BREAKPOINTS ===  */
